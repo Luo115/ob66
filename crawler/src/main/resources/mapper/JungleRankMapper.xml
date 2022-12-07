@@ -1,0 +1,11 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.haha.mapper.JungleRankMapper">
+
+    <insert id="insert" parameterType="rank">
+        insert into jungle_rank(id, hero_name, level, layer, win_rate, pick_rate, avatar, update_time) values(#{id},#{heroName},#{level},#{layer},#{winRate},#{pickRate},#{avatar},#{updateTime})
+    </insert>
+
+</mapper>
