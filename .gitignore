@@ -1,9 +1,9 @@
 # IntelliJ IDEA #
 .idea/
-/.idea/
-*/.idea/
-*.iws
-*.iml
-*.ipr
 
-*/target/
+*.iml
+
+target/
+
+node_modules/
+dist/

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haha.common.mapper.TopRankMapper">
+    <resultMap id="BaseResultMap" type="com.haha.common.pojo.Rank">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="hero_name" jdbcType="VARCHAR" property="heroName"/>
+        <result column="level" jdbcType="TINYINT" property="level"/>
+        <result column="layer" jdbcType="VARCHAR" property="layer"/>
+        <result column="win_rate" jdbcType="VARCHAR" property="winRate"/>
+        <result column="pick_rate" jdbcType="VARCHAR" property="pickRate"/>
+        <result column="avatar" jdbcType="VARCHAR" property="avatar"/>
+        <result column="update_time" jdbcType="VARCHAR" property="updateTime"/>
+    </resultMap>
+    <select id="findAll" resultMap="BaseResultMap">
+        select id,
+               hero_name,
+               level,
+               layer,
+               win_rate,
+               pick_rate,
+               avatar,
+               update_time
+        from top_rank
+        order by level asc
+    </select>
+</mapper>

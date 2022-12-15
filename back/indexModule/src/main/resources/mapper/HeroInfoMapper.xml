@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haha.common.mapper.HeroInfoMapper">
+    <resultMap id="BaseResultMap" type="com.haha.common.pojo.HeroInfo">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="nickName" jdbcType="VARCHAR" property="nickname"/>
+        <result column="heroName" jdbcType="VARCHAR" property="heroname"/>
+        <result column="position" jdbcType="VARCHAR" property="position"/>
+        <result column="passiveIcon" jdbcType="VARCHAR" property="passiveicon"/>
+        <result column="QIcon" jdbcType="VARCHAR" property="qicon"/>
+        <result column="WIcon" jdbcType="VARCHAR" property="wicon"/>
+        <result column="EIcon" jdbcType="VARCHAR" property="eicon"/>
+        <result column="RIcon" jdbcType="VARCHAR" property="ricon"/>
+        <result column="summonerSpell1" jdbcType="VARCHAR" property="summonerspell1"/>
+        <result column="summonerSpell2" jdbcType="VARCHAR" property="summonerspell2"/>
+        <result column="summonerSpellPresentRate1" jdbcType="VARCHAR" property="summonerspellpresentrate1"/>
+        <result column="summonerSpell3" jdbcType="VARCHAR" property="summonerspell3"/>
+        <result column="summonerSpell4" jdbcType="VARCHAR" property="summonerspell4"/>
+        <result column="summonerSpellPresentRate2" jdbcType="VARCHAR" property="summonerspellpresentrate2"/>
+        <result column="skillFirst" jdbcType="VARCHAR" property="skillfirst"/>
+        <result column="skillSecond" jdbcType="VARCHAR" property="skillsecond"/>
+        <result column="skillThird" jdbcType="VARCHAR" property="skillthird"/>
+        <result column="buildInit1" jdbcType="VARCHAR" property="buildinit1"/>
+        <result column="buildInit2" jdbcType="VARCHAR" property="buildinit2"/>
+        <result column="buildInitPresentRate1" jdbcType="VARCHAR" property="buildinitpresentrate1"/>
+        <result column="buildInit3" jdbcType="VARCHAR" property="buildinit3"/>
+        <result column="buildInit4" jdbcType="VARCHAR" property="buildinit4"/>
+        <result column="buildInitPresentRate2" jdbcType="VARCHAR" property="buildinitpresentrate2"/>
+        <result column="buildRecommend1" jdbcType="VARCHAR" property="buildrecommend1"/>
+        <result column="buildRecommend2" jdbcType="VARCHAR" property="buildrecommend2"/>
+        <result column="buildRecommend3" jdbcType="VARCHAR" property="buildrecommend3"/>
+        <result column="buildRecommendPresentRate1" jdbcType="VARCHAR" property="buildrecommendpresentrate1"/>
+        <result column="buildRecommend4" jdbcType="VARCHAR" property="buildrecommend4"/>
+        <result column="buildRecommend5" jdbcType="VARCHAR" property="buildrecommend5"/>
+        <result column="buildRecommend6" jdbcType="VARCHAR" property="buildrecommend6"/>
+        <result column="buildRecommendPresentRate2" jdbcType="VARCHAR" property="buildrecommendpresentrate2"/>
+        <result column="buildRecommend7" jdbcType="VARCHAR" property="buildrecommend7"/>
+        <result column="buildRecommend8" jdbcType="VARCHAR" property="buildrecommend8"/>
+        <result column="buildRecommend9" jdbcType="VARCHAR" property="buildrecommend9"/>
+        <result column="buildRecommendPresentRate3" jdbcType="VARCHAR" property="buildrecommendpresentrate3"/>
+        <result column="boot1" jdbcType="VARCHAR" property="boot1"/>
+        <result column="boot2" jdbcType="VARCHAR" property="boot2"/>
+        <result column="boot3" jdbcType="VARCHAR" property="boot3"/>
+        <result column="bootPresentRate1" jdbcType="VARCHAR" property="bootpresentrate1"/>
+        <result column="bootPresentRate2" jdbcType="VARCHAR" property="bootpresentrate2"/>
+        <result column="bootPresentRate3" jdbcType="VARCHAR" property="bootpresentrate3"/>
+        <result column="rune1" jdbcType="VARCHAR" property="rune1"/>
+        <result column="runeName1" jdbcType="VARCHAR" property="runename1"/>
+        <result column="rune2" jdbcType="VARCHAR" property="rune2"/>
+        <result column="runeName2" jdbcType="VARCHAR" property="runename2"/>
+        <result column="rune3" jdbcType="VARCHAR" property="rune3"/>
+        <result column="runeName3" jdbcType="VARCHAR" property="runename3"/>
+        <result column="rune4" jdbcType="VARCHAR" property="rune4"/>
+        <result column="runeName4" jdbcType="VARCHAR" property="runename4"/>
+        <result column="rune5" jdbcType="VARCHAR" property="rune5"/>
+        <result column="runeName5" jdbcType="VARCHAR" property="runename5"/>
+        <result column="rune6" jdbcType="VARCHAR" property="rune6"/>
+        <result column="runeName6" jdbcType="VARCHAR" property="runename6"/>
+        <result column="runeMini3" jdbcType="VARCHAR" property="runemini3"/>
+        <result column="runeMiniName3" jdbcType="VARCHAR" property="runemininame3"/>
+        <result column="runeMini2" jdbcType="VARCHAR" property="runemini2"/>
+        <result column="runeMiniName2" jdbcType="VARCHAR" property="runemininame2"/>
+        <result column="runeMini1" jdbcType="VARCHAR" property="runemini1"/>
+        <result column="runeMiniName1" jdbcType="VARCHAR" property="runemininame1"/>
+        <result column="runePresentRate1" jdbcType="VARCHAR" property="runepresentrate1"/>
+        <result column="rune7" jdbcType="VARCHAR" property="rune7"/>
+        <result column="runeName7" jdbcType="VARCHAR" property="runename7"/>
+        <result column="rune8" jdbcType="VARCHAR" property="rune8"/>
+        <result column="runeName8" jdbcType="VARCHAR" property="runename8"/>
+        <result column="rune9" jdbcType="VARCHAR" property="rune9"/>
+        <result column="runeName9" jdbcType="VARCHAR" property="runename9"/>
+        <result column="rune10" jdbcType="VARCHAR" property="rune10"/>
+        <result column="runeName10" jdbcType="VARCHAR" property="runename10"/>
+        <result column="rune11" jdbcType="VARCHAR" property="rune11"/>
+        <result column="runeName11" jdbcType="VARCHAR" property="runename11"/>
+        <result column="rune12" jdbcType="VARCHAR" property="rune12"/>
+        <result column="runeName12" jdbcType="VARCHAR" property="runename12"/>
+        <result column="runeMini6" jdbcType="VARCHAR" property="runemini6"/>
+        <result column="runeMini6Name" jdbcType="VARCHAR" property="runemini6name"/>
+        <result column="runeMini5" jdbcType="VARCHAR" property="runemini5"/>
+        <result column="runeMini5Name" jdbcType="VARCHAR" property="runemini5name"/>
+        <result column="runeMini4" jdbcType="VARCHAR" property="runemini4"/>
+        <result column="runeMini4Name" jdbcType="VARCHAR" property="runemini4name"/>
+        <result column="runePresentRate2" jdbcType="VARCHAR" property="runepresentrate2"/>
+    </resultMap>
+<!--    <sql id="Base_Column_List">-->
+<!--        &lt;!&ndash;-->
+<!--          WARNING - @mbg.generated-->
+<!--        &ndash;&gt;-->
+<!--        id, nickName, heroName, `position`, passiveIcon, QIcon, WIcon, EIcon, RIcon, summonerSpell1,-->
+<!--        summonerSpell2, summonerSpellPresentRate1, summonerSpell3, summonerSpell4, summonerSpellPresentRate2,-->
+<!--        skillFirst, skillSecond, skillThird, buildInit1, buildInit2, buildInitPresentRate1,-->
+<!--        buildInit3, buildInit4, buildInitPresentRate2, buildRecommend1, buildRecommend2,-->
+<!--        buildRecommend3, buildRecommendPresentRate1, buildRecommend4, buildRecommend5, buildRecommend6,-->
+<!--        buildRecommendPresentRate2, buildRecommend7, buildRecommend8, buildRecommend9, buildRecommendPresentRate3,-->
+<!--        boot1, boot2, boot3, bootPresentRate1, bootPresentRate2, bootPresentRate3, rune1,-->
+<!--        runeName1, rune2, runeName2, rune3, runeName3, rune4, runeName4, rune5, runeName5,-->
+<!--        rune6, runeName6, runeMini3, runeMiniName3, runeMini2, runeMiniName2, runeMini1,-->
+<!--        runeMiniName1, runePresentRate1, rune7, runeName7, rune8, runeName8, rune9, runeName9,-->
+<!--        rune10, runeName10, rune11, runeName11, rune12, runeName12, runeMini6, runeMini6Name,-->
+<!--        runeMini5, runeMini5Name, runeMini4, runeMini4Name, runePresentRate2-->
+<!--    </sql>-->
+
+    <select id="findHeroInfoByName" resultMap="BaseResultMap">
+        select nickName,
+               heroName,
+               `position`,
+               passiveIcon,
+               QIcon,
+               WIcon,
+               EIcon,
+               RIcon,
+               summonerSpell1,
+               summonerSpell2,
+               summonerSpellPresentRate1,
+               summonerSpell3,
+               summonerSpell4,
+               summonerSpellPresentRate2,
+               skillFirst,
+               skillSecond,
+               skillThird,
+               buildInit1,
+               buildInit2,
+               buildInitPresentRate1,
+               buildInit3,
+               buildInit4,
+               buildInitPresentRate2,
+               buildRecommend1,
+               buildRecommend2,
+               buildRecommend3,
+               buildRecommendPresentRate1,
+               buildRecommend4,
+               buildRecommend5,
+               buildRecommend6,
+               buildRecommendPresentRate2,
+               buildRecommend7,
+               buildRecommend8,
+               buildRecommend9,
+               buildRecommendPresentRate3,
+               boot1,
+               boot2,
+               boot3,
+               bootPresentRate1,
+               bootPresentRate2,
+               bootPresentRate3,
+               rune1,
+               runeName1,
+               rune2,
+               runeName2,
+               rune3,
+               runeName3,
+               rune4,
+               runeName4,
+               rune5,
+               runeName5,
+               rune6,
+               runeName6,
+               runeMini3,
+               runeMiniName3,
+               runeMini2,
+               runeMiniName2,
+               runeMini1,
+               runeMiniName1,
+               runePresentRate1,
+               rune7,
+               runeName7,
+               rune8,
+               runeName8,
+               rune9,
+               runeName9,
+               rune10,
+               runeName10,
+               rune11,
+               runeName11,
+               rune12,
+               runeName12,
+               runeMini6,
+               runeMini6Name,
+               runeMini5,
+               runeMini5Name,
+               runeMini4,
+               runeMini4Name,
+               runePresentRate2
+        from heroinfo
+        where nickName = #{nickName}
+    </select>
+</mapper>

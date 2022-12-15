@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: root
+    password: root@Luo115
+    url: jdbc:mysql://1.12.222.51:3306/lol?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: /mapper/*.xml
+  type-aliases-package: com/haha/common/pojo
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+server:
+  port: 9001
+
